@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Timer | David Mendes Varela Landim</title>
+    
+    <!-- CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/projet-styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html" style="color: #000000;">David Mendes Varela Landim</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" style="color: #000000;">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#about" style="color: #000000;">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#journey" style="color: #000000;">Parcours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html#projects" style="color: #000000;">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact" style="color: #000000;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+    <section class="project-detail-hero section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="project-heading">
+                        <span class="project-category">Application Web</span>
+                        <h1 class="project-title">Python Timer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="project-details section-padding">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <a href="../index.html#projects" class="back-to-projects"><i class="ri-arrow-left-line"></i> Retour aux projets</a>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="project-detail-content">
+                        <img src="../assets/img/python-timer.jpg" alt="Python Timer" class="img-fluid rounded mb-4">
+                        
+                        <h2>Présentation de l'application</h2>
+                        <p>
+                            Python Timer est une application web développée pour suivre et enregistrer avec précision le temps passé sur des tickets ServiceNow. Conçue avec Flask, cette solution professionnelle permet aux équipes IT et aux équipes de support de mesurer leur productivité et d'optimiser leur gestion du temps grâce à un système de chronométrage en temps réel.
+                        </p>
+                        <p>
+                            L'application se distingue par son utilisation avancée des WebSockets pour offrir une expérience utilisateur interactive où les mises à jour sont visibles instantanément pour tous les clients connectés. Grâce à l'intégration avec l'API ServiceNow, Python Timer permet une synchronisation fluide entre le suivi du temps et la gestion des tickets, offrant ainsi une solution complète pour les professionnels de l'IT.
+                        </p>
+                        
+                        <h2>Technologies utilisées</h2>
+                        <div class="technologies-section mb-5">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li><strong>Flask (v2.3.3)</strong> : Framework web léger en Python qui sert de base à l'application</li>
+                                <li><strong>Flask-SocketIO (v5.3.4)</strong> : Extension permettant la communication en temps réel entre client et serveur via WebSocket</li>
+                                <li><strong>Python-dotenv (v1.0.0)</strong> : Gestion des variables d'environnement à partir d'un fichier .env</li>
+                                <li><strong>Requests (v2.31.0)</strong> : Bibliothèque pour effectuer des requêtes HTTP vers des API externes</li>
+                                <li><strong>PyTZ (v2023.3)</strong> : Gestion des fuseaux horaires et des dates</li>
+                                <li><strong>Gevent (v23.9.1) et Gevent-WebSocket (v0.10.1)</strong> : Serveur WSGI asynchrone optimisé pour les applications WebSocket</li>
+                            </ul>
+
+                            <h3>Intégration</h3>
+                            <ul>
+                                <li><strong>ServiceNow API</strong> : Intégration avec la plateforme ServiceNow pour récupérer et mettre à jour des tickets</li>
+                            </ul>
+
+                            <h3>Interface utilisateur</h3>
+                            <ul>
+                                <li><strong>HTML/CSS/JavaScript</strong> : Interface utilisateur web rendue par Flask</li>
+                                <li><strong>WebSockets</strong> : Communication bidirectionnelle en temps réel entre le navigateur et le serveur</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>Fonctionnalités principales</h2>
+                        <div class="features-section mb-5">
+                            <h3>Gestion des tickets ServiceNow</h3>
+                            <ul>
+                                <li>Récupération et affichage des tickets depuis ServiceNow</li>
+                                <li>Consultation des détails d'un ticket spécifique</li>
+                                <li>Vérification de la connexion avec ServiceNow</li>
+                            </ul>
+
+                            <h3>Système de chronométrage (Timer)</h3>
+                            <ul>
+                                <li>Démarrer un timer sur un ticket spécifique</li>
+                                <li>Mettre en pause le timer d'un ticket</li>
+                                <li>Arrêter le timer et enregistrer le temps passé</li>
+                                <li>Mise à jour en temps réel de l'état des timers pour tous les clients connectés</li>
+                                <li>Stockage temporaire des timers actifs en mémoire</li>
+                            </ul>
+
+                            <h3>Dashboard et visualisations</h3>
+                            <ul>
+                                <li>Page d'accueil avec tableau de bord</li>
+                                <li>Vue "sonar" pour une visualisation graphique des données</li>
+                            </ul>
+
+                            <h3>Gestion des utilisateurs</h3>
+                            <ul>
+                                <li>Formulaires de connexion et d'inscription</li>
+                                <li>Authentification des utilisateurs</li>
+                            </ul>
+
+                            <h3>Configuration et paramétrage</h3>
+                            <ul>
+                                <li>Gestion des paramètres de l'application</li>
+                                <li>Configuration des identifiants ServiceNow</li>
+                            </ul>
+
+                            <h3>Mises à jour en temps réel</h3>
+                            <ul>
+                                <li>Communication en temps réel via WebSockets pour mettre à jour les timers</li>
+                                <li>Thread en arrière-plan pour les mises à jour périodiques des timers</li>
+                            </ul>
+                        </div>
+
+                        <h2>Architecture de l'application</h2>
+                        <p>
+                            Python Timer est construit selon une architecture moderne qui sépare clairement le frontend du backend, tout en permettant une communication en temps réel grâce aux WebSockets. Le backend Flask gère l'API, l'authentification et les intégrations externes, tandis que le frontend offre une interface réactive qui s'actualise instantanément sans nécessiter de rafraîchissement de la page.
+                        </p>
+
+                        <p>
+                            L'application utilise un serveur WSGI asynchrone (Gevent) pour gérer efficacement de multiples connexions simultanées et assurer des performances optimales, même sous charge. Le stockage en mémoire des timers actifs permet d'obtenir des réponses très rapides, tandis que l'intégration avec ServiceNow garantit que toutes les données sont correctement synchronisées avec le système de gestion des tickets.
+                        </p>
+                        
+                        <div class="project-meta">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="meta-item">
+                                        <h5>Technologies</h5>
+                                        <ul class="meta-list">
+                                            <li>Python</li>
+                                            <li>Flask</li>
+                                            <li>WebSockets</li>
+                                            <li>JavaScript</li>
+                                            <li>HTML/CSS</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="meta-item">
+                                        <h5>Rôle du projet</h5>
+                                        <ul class="meta-list">
+                                            <li>Développeur principal</li>
+                                            <li>Concepteur d'interface</li>
+                                            <li>Intégration API</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="meta-item">
+                                        <h5>Durée</h5>
+                                        <p>3 mois</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="project-sidebar">
+                        <div class="sidebar-widget">
+                            <h4>Autres Projets</h4>
+                            <div class="related-projects">
+                                <div class="related-project">
+                                    <a href="gestion-tickets.html">
+                                        <img src="../assets/img/gestion_ticket.jpg" alt="Système de gestion de tickets" class="img-fluid">
+                                        <h5>Système de gestion de tickets</h5>
+                                    </a>
+                                </div>
+                                <div class="related-project">
+                                    <a href="application-broce.html">
+                                        <img src="../assets/img/Broce.png" alt="Application Broce" class="img-fluid">
+                                        <h5>Application Broce</h5>
+                                    </a>
+                                </div>
+                                <div class="related-project">
+                                    <a href="gestion-entreprise.html">
+                                        <img src="../assets/img/javafx.png" alt="Gestion entreprise" class="img-fluid">
+                                        <h5>Gestion entreprise</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4 justify-content-between align-items-center">
+                <div class="col-lg-4">
+                    <p class="mb-0">&copy; 2025 David Mendes Varela Landim. Tous droits réservés.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="social-links">
+                        <a href="https://github.com/davidadmd" target="_blank" class="social-link"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/david-mendes-varela/" target="_blank" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-dribbble-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animation library
+        AOS.init();
+        
+        // Loader script
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.querySelector(".loader-wrapper").style.opacity = "0";
+                setTimeout(function() {
+                    document.querySelector(".loader-wrapper").style.display = "none";
+                }, 500);
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David ADMD - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-gradient">DAVID.DEV</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="ri-menu-line"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-github-line"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="ri-linkedin-line"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="home-text">
+                        <h1 class="display-3 fw-bold mb-3">Développeur Web <br><span class="text-gradient">Full-Stack</span></h1>
+                        <p class="lead mb-4 text-secondary">Je crée des applications web modernes et innovantes, en utilisant les dernières technologies pour offrir des expériences utilisateur exceptionnelles.</p>
+                        <div class="buttons">
+                            <a href="#projects" class="btn btn-primary me-3">Voir mes projets</a>
+                            <a href="#contact" class="btn btn-outline-light">Me contacter</a>
+                        </div>
+                        <div class="tech-stack mt-5">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="home-img text-center">
+                        <div class="glowing-circle"></div>
+                        <div class="floating-elements">
+                            <i class="ri-reactjs-line tech-icon react"></i>
+                            <i class="ri-nodejs-line tech-icon node"></i>
+                            <i class="ri-code-s-slash-line tech-icon php"></i>
+                            <i class="ri-database-2-line tech-icon mysql"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <div class="experience-badge">
+                            <span class="h2 fw-bold">4+</span>
+                            <span class="text-uppercase">Années d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2 class="section-title">À propos de moi</h2>
+                        <p class="text-secondary mb-4">
+                            Passionné par le développement web depuis plus de 4 ans, je me spécialise dans la création d'applications web performantes et innovantes. Mon approche combine créativité technique et focus sur l'expérience utilisateur.
+                        </p>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="ri-code-line"></i></div>
+                                <h4>Front-end</h4>
+                                <p>React, Vue.js, JavaScript ES6+, SASS</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="ri-server-line"></i></div>
+                                <h4>Back-end</h4>
+                                <p>Node.js, PHP, MySQL, MongoDB</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="ri-tools-line"></i></div>
+                                <h4>Outils</h4>
+                                <p>Git, Docker, AWS, CI/CD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Mes Projets</h2>
+            <div class="row gy-4">
+                <!-- Project 1 -->
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/img/project-1.jpg" alt="Project 1" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Application E-commerce</h4>
+                            <p class="text-secondary">Site e-commerce moderne avec panier, paiement et gestion des commandes</p>
+                            <div class="tech-used">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">MongoDB</span>
+                            </div>
+                            <div class="project-links mt-3">
+                                <a href="#" class="btn btn-sm btn-outline-light me-2">Voir le site</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Code source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/img/project-2.jpg" alt="Project 2" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Dashboard Analytics</h4>
+                            <p class="text-secondary">Interface d'administration avec visualisation de données en temps réel</p>
+                            <div class="tech-used">
+                                <span class="tech-badge">Vue.js</span>
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                            <div class="project-links mt-3">
+                                <a href="#" class="btn btn-sm btn-outline-light me-2">Voir le site</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Code source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row gy-4 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form-wrapper">
+                        <h2 class="section-title text-center mb-4">Me Contacter</h2>
+                        <form id="contact-form" class="contact-form">
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Votre nom">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Votre email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Sujet">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="4" placeholder="Votre message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-auto">
+                    <p class="mb-0">&copy; 2024 David ADMD. Tous droits réservés</p>
+                </div>
+                <div class="col-auto">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="ri-github-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-linkedin-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-twitter-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
